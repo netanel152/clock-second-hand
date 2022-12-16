@@ -1,0 +1,97 @@
+.App {
+  text-align: center;
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+
+
+  .clock-play-heading {
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .clock {
+    max-width: 375px;
+    height: 280px;
+    border: 20px solid lightcoral;
+    margin: 0 auto;
+    border-radius: 50%;
+    position: relative;
+    background-color: white;
+  }
+
+  .clock::after {
+
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: grey;
+    position: absolute;
+    top: 49%;
+    left: 49%;
+    border-radius: 50%;
+  }
+
+
+  .second-hand {
+    width: 2px;
+    height: 155px;
+    background: red;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 0px 0px 10px 10px;
+    transform-origin: top;
+    transform: rotate(180deg);
+  }
+
+  .brand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    font-size: 21px;
+    z-index: -1;
+    padding: 0 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 7px;
+    font-style: italic;
+  }
+
+  @media only screen and (max-width: 420px) {
+    .clock {
+      width: 250px;
+      height: 250px;
+    }
+
+    .second-hand {
+      height: 135px;
+    }
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
