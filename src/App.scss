@@ -46,7 +46,7 @@
 
   .second-hand {
     width: 2px;
-    height: 155px;
+    height: 130px;
     background: red;
     position: absolute;
     left: 50%;
@@ -56,20 +56,6 @@
     transform: rotate(180deg);
   }
 
-  .brand {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    background-color: #fff;
-    font-size: 21px;
-    z-index: -1;
-    padding: 0 5px;
-    border-radius: 5px;
-    font-weight: bold;
-    letter-spacing: 7px;
-    font-style: italic;
-  }
-
   @media only screen and (max-width: 420px) {
     .clock {
       width: 250px;
@@ -77,7 +63,7 @@
     }
 
     .second-hand {
-      height: 110px;
+      height: 105px;
     }
   }
 }

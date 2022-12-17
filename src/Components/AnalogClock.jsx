@@ -19,15 +19,14 @@ const AnalogClock = () => {
         <div className="play-details-body">
           <h1 className="clock-play-heading">Analog Second Clock</h1>
           <br />
-          <div className="analong-clock-container">
+          <div className="analog-clock-container">
             <div className="clock">
               <div
                 className="second-hand"
                 style={{
                   transform: "rotate(" + second + "deg)",
-                }}
-              ></div>
-              <div className="brand"></div>
+                }}>
+              </div>
             </div>
           </div>
         </div>
